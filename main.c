@@ -4,24 +4,24 @@
 
 
 int main() {
-	// estudado pilhas e filas (critérios de restrição)
-	// prinicipais criterios de restrição: FIFO e LIFO
+	// estudado pilhas e filas (critÃ©rios de restriÃ§Ã£o)
+	// prinicipais criterios de restriÃ§Ã£o: FIFO e LIFO
 	// FIFO=First in first out  (fila) || LIFO = Last in first out (pilha)
-	// São listas onde o algoritmo de inserção e remoção são limitados 
-	// em relação à uma lista. 
-	// ou seja na fila a inserção e a remoção estão em lados extremos 
-	// ao outro. O que dita o que é uma fila ou pilha é a organização da
-	// inserção e remoção.
+	// SÃ£o listas onde o algoritmo de inserÃ§Ã£o e remoÃ§Ã£o sÃ£o limitados 
+	// em relaÃ§Ã£o Ã  uma lista. 
+	// ou seja na fila a inserÃ§Ã£o e a remoÃ§Ã£o estÃ£o em lados extremos 
+	// ao outro. O que dita o que Ã© uma fila ou pilha Ã© a organizaÃ§Ã£o da
+	// inserÃ§Ã£o e remoÃ§Ã£o.
 	// LSE
 	
 	// Inplementar uma pilha simplesmente encadeada 
 	// 1- Inserir 5 elementos
-	// A pilha tem uma harmonização entre inserção e remoção.
+	// A pilha tem uma harmonizaÃ§Ã£o entre inserÃ§Ã£o e remoÃ§Ã£o.
 	// Ou seja: Se inserir a esquerda, se remove a esquerda.
-	// 2- Remover o 3º elemento.
-	// Remoção intermediaria: dois ponteiros, 1 aponta para o proximo e o 
-	// que será removido é removido.
-	// Não funciona assim na pilha, necessário uma pilha auxiliar.
+	// 2- Remover o 3Âº elemento.
+	// RemoÃ§Ã£o intermediaria: dois ponteiros, 1 aponta para o proximo e o 
+	// que serÃ¡ removido Ã© removido.
+	// NÃ£o funciona assim na pilha, necessÃ¡rio uma pilha auxiliar.
 	// Apagar todo mundo para cima do terceiro e copiar (desempilhar)
 	// os valores que estavam acima.
 	
@@ -45,17 +45,18 @@ int main() {
 		listAux->dado=p->dado;
 		printf("Lista aux: %d \n",listAux->dado);
 	}
-	// apagar 3º item
-	// colocar q no começo da lista
-	// ir ate 3º item
-	// deletar 3º item. Copiar da lista aux para lista.
+	// apagar 3Âº item
+	// colocar q no comeÃ§o da lista
+	// ir ate 3Âº item
+	// deletar 3Âº item. Copiar da lista aux para lista.
+	// Ainda nÃ£o funiciona.....
 	q=malloc(sizeof(struct node));
 	q=listAux;
 	while(q->prox!=NULL){
 		q=q->prox;
 	}
 	if(q->prox=NULL){
-		printf("p->next é igual a NULL!");
+		printf("p->next Ã© igual a NULL!");
 	}
 	
 	return 0;
