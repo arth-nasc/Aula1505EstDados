@@ -34,7 +34,7 @@ int main() {
 	srand(time(NULL));
 	lista=NULL;
 	sn=0;
-	while(sn<5){ // Insercao a esquerda, com lista auxiliar...
+	while(sn<5){ // Insercao a direita, com lista auxiliar...
 		p=malloc(sizeof(struct node));
 		//listAux=malloc(sizeof(struct node));
         if (lista == NULL) {
